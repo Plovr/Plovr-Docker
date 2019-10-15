@@ -8,7 +8,7 @@ jobs:
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: docker.pkg.github.com/plovr/plovr-base/plovr-base                             
+        name: docker.pkg.github.com/plovr/plovr-docker/plovr-docker                             
         username: ${{ secrets.DOCKER_GITHUB_USERNAME }}
         password: ${{ secrets.DOCKER_GITHUB_PASSWORD }}
         registry: docker.pkg.github.com
