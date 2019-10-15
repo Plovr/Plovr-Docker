@@ -10,7 +10,7 @@ RUN apt update && apt install -y \
   python-dev
 
 # Build BUCK
-RUN git clone https://github.com/facebook/buck.git /buck/
+RUN git clone --depth 1 https://github.com/facebook/buck.git /buck/
 WORKDIR /buck
 RUN ant
 RUN ln -sf /buck/bin/buck /usr/bin/
