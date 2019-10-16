@@ -1,7 +1,7 @@
 # Builds the image xvilo/plovr-base
 FROM openjdk:8
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 
 # Install deps
 RUN apt update && apt install -y \
