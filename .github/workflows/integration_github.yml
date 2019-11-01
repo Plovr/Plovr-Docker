@@ -1,5 +1,7 @@
 name: Integration Github
-on: [tag]
+on:
+  release:
+    types: [published]
 jobs:
   build:
     runs-on: ubuntu-latest
